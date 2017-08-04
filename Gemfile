@@ -1,5 +1,15 @@
 source 'https://rubygems.org'
 
+gem 'httparty'
+
+gem 'dotenv'
+
+gem 'awesome_print'
+
+gem 'bcrypt'
+
+gem 'soda-ruby'
+
 # PostgreSQL driver
 gem 'pg'
 
