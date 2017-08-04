@@ -6,6 +6,8 @@ post '/gifs' do
   @search_string = params[:week_values]
 
   case @search_string
+    when "hungry"
+      @translated = "tacos"
     when "awesome"
       @translated = "awesome"
     when "meh"
@@ -25,5 +27,8 @@ post '/gifs' do
   end
 
   @results = GiphyAdapter.new.search(@translated)
+
   erb :'/gifs/results'
+
 end
+

@@ -11,7 +11,8 @@ class GiphyAdapter
     response = self.class.get("/v1/gifs/search",
                     {query: {
                       q: search_string,
-                      api_key: @api_key
+                      api_key: @api_key,
+                      limit: 3
                       }
                       })
 
